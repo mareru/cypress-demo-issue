@@ -1,7 +1,5 @@
 {
   "viewportWidth": 1360,
   "viewportHeight": 790,
-  "env": {
-    "baseUrl": "https://www.index.hr/"
-  }
+  "baseUrl": "https://www.index.hr/"
 }
