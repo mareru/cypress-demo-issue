@@ -1,0 +1,28 @@
+{
+  "name": "cypress-tests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "open": "cypress open",
+    "run": "cypress run",
+    "smoke": "cypress open --env configFile=qa --config integrationFolder=cypress/integration/smoke_tests",
+    "smoke2": "cypress open --config-file qa.json --config integrationFolder=cypress/integration/smoke_tests",
+    "wip": "cypress run --config integrationFolder=cypress/integration/in_progress --env configFile=qa,country=es",
+    "cypress-cucumber-preprocessor": {
+      "nonGlobalStepDefinitions": true
+    }
+  },
+  "author": "Sara Cudic",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "@bahmutov/cypress-extends": "^1.1.0",
+    "cucumber": "^7.0.0-rc.0",
+    "cypress": "^6.2.1",
+    "cypress-cucumber-preprocessor": "^4.0.0",
+    "cypress-file-upload": "^4.1.1",
+    "fs-extra": "^9.0.1"
+  }
+}
