@@ -8,7 +8,7 @@
     "open": "cypress open",
     "run": "cypress run",
     "smoke": "cypress open --env configFile=qa --config integrationFolder=cypress/integration/smoke_tests",
-    "smoke2": "cypress open --config-file qa.json --config integrationFolder=cypress/integration/smoke_tests",
+    "smoke2": "cypress open --config-file ./cypress/config/env/qa.json --config integrationFolder=cypress/integration/smoke_tests",
     "wip": "cypress run --config integrationFolder=cypress/integration/in_progress --env configFile=qa,country=es",
     "cypress-cucumber-preprocessor": {
       "nonGlobalStepDefinitions": true

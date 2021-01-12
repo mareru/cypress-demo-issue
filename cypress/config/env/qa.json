@@ -1,5 +1,8 @@
 {
   "extends": "../../../cypress.json",
   "$schema": "https://on.cypress.io/cypress.schema.json",
-  "baseUrl": "https://www.google.com/"
+  "baseUrl": "https://www.google.com/",
+  "env": {
+    "foo": false
+  }
 }

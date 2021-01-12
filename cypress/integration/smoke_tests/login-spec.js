@@ -3,5 +3,6 @@ describe('Login is successful', function () {
     cy.log('XXX');
     cy.log(Cypress.config('baseUrl'));
     cy.visit(Cypress.config('baseUrl'));
+    cy.log(Cypress.env('foo'));
   });
 });
